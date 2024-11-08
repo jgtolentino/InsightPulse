@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Button from './Button';
+import { Button } from '../ui';
+import { FaLightbulb } from 'react-icons/fa';
 
-function Hero() {
+export function Hero() {
   return (
     <section className="min-h-[90vh] flex items-center justify-center px-4 py-20 bg-dark relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
@@ -12,6 +13,9 @@ function Hero() {
         transition={{ duration: 1.2 }}
         className="max-w-[65ch] mx-auto text-center relative z-10"
       >
+        <div className="flex justify-center mb-6">
+          <FaLightbulb className="w-12 h-12 text-primary animate-pulse" />
+        </div>
         <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-light leading-[1.1] mb-8 text-balance gradient-text">
           Unlock the Power of Consumer Data and Feedback
         </h1>
@@ -24,9 +28,7 @@ function Hero() {
             Driven by a passion for uncovering insights that fuel impactful decisions
           </p>
           <div className="flex gap-6 justify-center">
-            <Button href="#demo" variant="primary">
-              Request Demo
-            </Button>
+            <Button href="#demo">Request Demo</Button>
             <Button href="https://www.linkedin.com/company/insightpulseai" variant="outline">
               Learn More
             </Button>
@@ -36,5 +38,3 @@ function Hero() {
     </section>
   );
 }
-
-export default Hero;
