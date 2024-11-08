@@ -14,10 +14,10 @@ export function Hero() {
         className="max-w-[65ch] mx-auto text-center relative z-10"
       >
         <div className="flex justify-center mb-6">
-          <FaLightbulb className="w-12 h-12 text-primary animate-pulse" />
+          <FaLightbulb className="w-14 h-14 text-teal-400 animate-pulse" />
         </div>
         <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-light leading-[1.1] mb-8 text-balance gradient-text">
-          Unlock the Power of Consumer Data and Feedback
+          Unlock Consumer Insights with Social Listening and AI
         </h1>
         <motion.div
           initial={{ opacity: 0 }}
@@ -25,7 +25,7 @@ export function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <p className="text-[clamp(1.25rem,2vw,1.5rem)] text-gray-300 mb-12 font-light max-w-[50ch] mx-auto text-balance">
-            Driven by a passion for uncovering insights that fuel impactful decisions
+            Gain a deeper understanding of influencer marketing, user-generated content, and real audience engagement through powerful sentiment analysis
           </p>
           <div className="flex gap-6 justify-center">
             <Button href="#demo">Request Demo</Button>
