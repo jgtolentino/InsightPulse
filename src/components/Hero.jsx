@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaLightbulb } from 'react-icons/fa'; // Importing a bulb icon from react-icons
 import Button from './Button';
 
 function Hero() {
@@ -12,9 +13,18 @@ function Hero() {
         transition={{ duration: 1.2 }}
         className="max-w-[65ch] mx-auto text-center relative z-10"
       >
+        {/* Adding the bulb icon and logo above the headline */}
+        <FaLightbulb className="text-primary text-[3rem] mx-auto mb-2" /> {/* Bulb Icon */}
+        <img 
+          src="/images/InsightPulseAI.png" 
+          alt="InsightPulse Logo" 
+          className="mx-auto mb-4 w-20 h-auto" 
+        />
+
         <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-light leading-[1.1] mb-8 text-balance gradient-text">
           Unlock Consumer Insights with Social Listening and AI
         </h1>
+        
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
