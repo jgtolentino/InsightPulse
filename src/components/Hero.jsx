@@ -3,11 +3,23 @@ import { motion } from 'framer-motion';
 import Button from './Button';
 import { FaLightbulb } from 'react-icons/fa';
 
+// Array of image filenames
+const images = ['/1.jpg', '/2.jpg', '/3.jpg', '/4.jpg'];
+// Randomly select an image from the array
+const backgroundImage = images[Math.floor(Math.random() * images.length)];
+
 function Hero() {
   return (
-    <section className="min-h-[90vh] flex items-center justify-center px-4 py-20 bg-dark relative overflow-hidden">
+    <section
+      className="min-h-[90vh] flex items-center justify-center px-4 py-20 bg-dark relative overflow-hidden"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
@@ -21,7 +33,7 @@ function Hero() {
         <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-light leading-[1.1] mb-8 text-balance gradient-text">
           Unlock Consumer Insights with Social Listening and AI
         </h1>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
