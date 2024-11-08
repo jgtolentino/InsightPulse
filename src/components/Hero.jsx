@@ -45,6 +45,7 @@ function Hero() {
               Learn More
             </Button>
           </div>
+          <p className="mt-10 text-gray-400 font-medium">Ready to transform your business?</p>
         </motion.div>
       </motion.div>
     </section>
