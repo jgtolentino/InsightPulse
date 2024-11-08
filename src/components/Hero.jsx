@@ -13,7 +13,7 @@ function Hero() {
         className="max-w-[65ch] mx-auto text-center relative z-10"
       >
         <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-light leading-[1.1] mb-8 text-balance gradient-text">
-          Uncover Insights from Feedback
+          Unlock the Power of Consumer Data and Feedback
         </h1>
         <motion.div
           initial={{ opacity: 0 }}
@@ -21,7 +21,7 @@ function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <p className="text-[clamp(1.25rem,2vw,1.5rem)] text-gray-300 mb-12 font-light max-w-[50ch] mx-auto text-balance">
-            AI-powered sentiment analysis made easy for understanding customer and employee feedback
+            Driven by a passion for uncovering insights that fuel impactful decisions
           </p>
           <div className="flex gap-6 justify-center">
             <Button href="#demo" variant="primary">
