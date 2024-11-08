@@ -3,9 +3,7 @@ import { motion } from 'framer-motion';
 import Button from './Button';
 import { FaLightbulb } from 'react-icons/fa';
 
-// Array of image filenames
 const images = ['/1.jpg', '/2.jpg', '/3.jpg', '/4.jpg'];
-// Randomly select an image from the array
 const backgroundImage = images[Math.floor(Math.random() * images.length)];
 
 function Hero() {
@@ -25,7 +23,6 @@ function Hero() {
         transition={{ duration: 1.2 }}
         className="max-w-[65ch] mx-auto text-center relative z-10"
       >
-        {/* Adding the bulb icon above the headline */}
         <div className="flex justify-center mb-6">
           <FaLightbulb className="w-12 h-12 text-primary animate-pulse" />
         </div>
@@ -40,7 +37,7 @@ function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <p className="text-[clamp(1.25rem,2vw,1.5rem)] text-gray-300 mb-12 font-light max-w-[50ch] mx-auto text-balance">
-            Gain a deeper understanding of influencer marketing, user-generated content, and real audience engagement through powerful sentiment analysis
+            Experience the full power of our AI analytics with a personalized demo. See how InsightPulseAI can transform your data into actionable insights.
           </p>
           <div className="flex gap-6 justify-center">
             <Button href="#demo">Request Demo</Button>
