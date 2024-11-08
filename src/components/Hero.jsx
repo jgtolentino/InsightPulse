@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { FaLightbulb } from 'react-icons/fa';
+import UI from '../../ui';
 
 const images = ['/1.jpg', '/2.jpg', '/3.jpg', '/4.jpg'];
 const backgroundImage = images[Math.floor(Math.random() * images.length)];
