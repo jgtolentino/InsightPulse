@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLightbulb } from 'react-icons/fa'; // Importing a bulb icon from react-icons
 import Button from './Button';
+import { FaLightbulb } from 'react-icons/fa';
 
 function Hero() {
   return (
@@ -13,13 +13,10 @@ function Hero() {
         transition={{ duration: 1.2 }}
         className="max-w-[65ch] mx-auto text-center relative z-10"
       >
-        {/* Adding the bulb icon and logo above the headline */}
-        <FaLightbulb className="text-primary text-[3rem] mx-auto mb-2" /> {/* Bulb Icon */}
-        <img 
-          src="/images/InsightPulseAI.png" 
-          alt="InsightPulse Logo" 
-          className="mx-auto mb-4 w-20 h-auto" 
-        />
+        {/* Adding the bulb icon above the headline */}
+        <div className="flex justify-center mb-6">
+          <FaLightbulb className="w-12 h-12 text-primary animate-pulse" />
+        </div>
 
         <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-light leading-[1.1] mb-8 text-balance gradient-text">
           Unlock Consumer Insights with Social Listening and AI
@@ -31,12 +28,10 @@ function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <p className="text-[clamp(1.25rem,2vw,1.5rem)] text-gray-300 mb-12 font-light max-w-[50ch] mx-auto text-balance">
-            Experience the full power of our AI analytics with a personalized demo. See how InsightPulseAI can transform your customer data into actionable insights.
+            Gain a deeper understanding of influencer marketing, user-generated content, and real audience engagement through powerful sentiment analysis
           </p>
           <div className="flex gap-6 justify-center">
-            <Button href="#demo" variant="primary">
-              Request Demo
-            </Button>
+            <Button href="#demo">Request Demo</Button>
             <Button href="https://www.linkedin.com/company/insightpulseai" variant="outline">
               Learn More
             </Button>
