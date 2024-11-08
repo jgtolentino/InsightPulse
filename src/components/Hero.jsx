@@ -21,7 +21,7 @@ function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <p className="text-[clamp(1.25rem,2vw,1.5rem)] text-gray-300 mb-12 font-light max-w-[50ch] mx-auto text-balance">
-            Gain a deeper understanding of influencer marketing, user-generated content, and real audience engagement through powerful sentiment analysis.
+            Experience the full power of our AI analytics with a personalized demo. See how InsightPulseAI can transform your customer data into actionable insights.
           </p>
           <div className="flex gap-6 justify-center">
             <Button href="#demo" variant="primary">
